@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+
+# Virtual Environment
+venv/
+env/
+.venv/
+venv/
+ENV/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Project specific (XML файлы с данными)
+resources/data/*.xml
+!resources/data/.gitkeep
+
+# Logs
+*.log
+
+# Byte-compiled
+*.pyc
+*.pyo
+
+# Distribution
+dist/
+build/
+*.egg-info/
