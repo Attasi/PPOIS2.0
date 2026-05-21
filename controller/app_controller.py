@@ -4,7 +4,7 @@
 """
 
 import os
-from typing import List, Dict, Any, Optional, Tuple
+from typing import List, Dict, Any, Optional
 from model.student_record import StudentRecord
 from model.data_manager import DataManager
 
@@ -367,32 +367,3 @@ class AppController:
             if id(record) == id(self.records[record_index]):
                 return i
         return -1
-
-    def get_statistics(self) -> Dict[str, Any]:
-        """
-        Возвращает статистику по данным.
-
-        Returns:
-            Словарь со статистикой
-        """
-        if not self.records:
-            return {
-                "total": 0,
-                "avg_father_income": 0,
-                "avg_mother_income": 0,
-                "total_brothers": 0,
-                "total_sisters": 0
-            }
-
-        total_father_income = sum(r.father_income for r in self.records)
-        total_mother_income = sum(r.mother_income for r in self.records)
-        total_brothers = sum(r.brothers_count for r in self.records)
-        total_sisters = sum(r.sisters_count for r in self.records)
-
-        return {
-            "total": len(self.records),
-            "avg_father_income": total_father_income / len(self.records),
-            "avg_mother_income": total_mother_income / len(self.records),
-            "total_brothers": total_brothers,
-            "total_sisters": total_sisters
-        }
