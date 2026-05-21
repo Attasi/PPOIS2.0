@@ -152,7 +152,7 @@ class AppController:
 
     def _clear_filter(self) -> None:
         """Очищает результаты последнего поиска."""
-        self.filtered_records = []
+        self.filtered_records = [] #результаты поиска
 
     def get_current_display_records(self) -> List[StudentRecord]:
         """
