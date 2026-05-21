@@ -157,22 +157,6 @@
 
 **Кнопки:** Удалить, Отмена
 
-## Исключения (exceptions.py)
-
-| Исключение | Назначение |
-|------------|------------|
-| `StoreException` | Базовое исключение |
-| `NotAuthenticatedError` | Не авторизован |
-| `ProductNotFoundError` | Товар не найден |
-| `InsufficientStockError` | Недостаточно товара |
-| `CartEmptyError` | Корзина пуста |
-| `OrderNotFoundError` | Заказ не найден |
-| `OrderCannotBePaidError` | Нельзя оплатить |
-| `OrderCannotBeReturnedError` | Нельзя вернуть |
-| `InvalidRatingError` | Неверная оценка |
-| `PromoCodeNotFoundError` | Промокод не найден |
-| `ValidationError` | Ошибка валидации |
-
 ## Формат XML
 
 ```xml
