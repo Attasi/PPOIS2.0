@@ -334,28 +334,3 @@ class StudentRecord:
         fio_parts = [self.student_lastname, self.student_firstname, self.student_patronymic]
         fio = " ".join([p for p in fio_parts if p])
         return f"StudentRecord: {fio}"
-
-
-# Функция для создания тестовой записи (для отладки)
-def create_sample_record() -> StudentRecord:
-    """
-    Создаёт пример записи для тестирования.
-
-    Returns:
-        Объект StudentRecord с тестовыми данными
-    """
-    return StudentRecord(
-        student_lastname="Иванов",
-        student_firstname="Иван",
-        student_patronymic="Иванович",
-        father_lastname="Иванов",
-        father_firstname="Петр",
-        father_patronymic="Петрович",
-        father_income=50000.0,
-        mother_lastname="Иванова",
-        mother_firstname="Мария",
-        mother_patronymic="Сергеевна",
-        mother_income=45000.0,
-        brothers_count=1,
-        sisters_count=2
-    )
