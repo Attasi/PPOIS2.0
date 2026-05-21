@@ -34,7 +34,6 @@
 | Путь | Назначение |
 |------|------------|
 | `main.py` | Точка входа |
-| `generate_data.py` | Генерация тестовых данных |
 | `model/student_record.py` | Класс записи (StudentRecord) |
 | `model/data_manager.py` | Работа с XML (DOM/SAX) |
 | `controller/app_controller.py` | Бизнес-логика (AppController) |
@@ -90,7 +89,6 @@
 |-------|----------|--------|
 | `save_to_file(filename, records)` | Сохранение в XML | DOM (xml.dom.minidom) |
 | `load_from_file(filename)` | Загрузка из XML | SAX (xml.sax) |
-| `generate_sample_data(count)` | Генерация тестовых данных | - |
 
 ### AppController (app_controller.py)
 
